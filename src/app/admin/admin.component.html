@@ -1,0 +1,19 @@
+<div class="list-wrapper">
+    <div class="list-box">
+        <div class="list-button-wrapper">
+            <button type="submit" mat-raised-button (click)="fetchUsers()">Fetch Users List</button>
+        </div>
+        <table mat-table [dataSource] = "usersList" class = "mat-elevation-z8"> 
+            <ng-container matColumnDef = "username">
+            <th mat-header-cell *matHeaderCellDef> Username</th>
+            <td mat-cell *matCellDef = "let element"> {{element.username}} </td>
+            </ng-container>
+            <ng-container matColumnDef = "role">
+            <th mat-header-cell *matHeaderCellDef>Role</th>
+            <td mat-cell *matCellDef = "let element"> {{element.role}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef = "['username','role']"></tr>
+            <tr mat-row *matRowDef = "let row; columns: ['username','role'];"></tr>
+        </table>
+    </div>
+</div>

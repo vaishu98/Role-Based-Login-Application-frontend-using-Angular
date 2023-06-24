@@ -1,0 +1,12 @@
+<div class="signup-wrapper">
+    <div class="signup-box">
+        <h1>Fill in the details to Signup</h1>
+        <form #signupForm="ngForm" (submit)="Signup(signupForm.value)">
+            <input type="text" placeholder="Username" name="username" ngModel>
+            <input type="password" placeholder="Password" name="password" ngModel>
+            <div class="signup-button-wrapper">
+                <button type="submit" mat-raised-button>Signup</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.forbidden-wrapper{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.forbidden-box {
+    width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}   
+
+p{
+    font-size: medium;
+    font-weight: 400;
+    text-align: center;
+    text-align: justify;
+}

@@ -1,0 +1,14 @@
+<mat-toolbar class="navbar">
+    <div>Basic Role Based Login Application</div>
+    <div>
+        <span *ngIf="roleMatch('ROLE_USER')"><a routerLink="User">User Dashboard</a></span>
+        <span *ngIf="roleMatch('ROLE_ADMIN')"><a routerLink="Admin">Admin Dashboard</a></span>
+        <span><a routerLink="About">About</a></span>
+        <span *ngIf="! isLoggedIn()"><a routerLink="Login">Login</a></span>
+        <span *ngIf="! isLoggedIn()"><a routerLink="Signup">Signup</a></span>
+        <span *ngIf="isLoggedIn()"><button type="submit" mat-raised-button (click)="logout()">Logout</button></span>
+    </div>
+</mat-toolbar>
+<div>
+    <router-outlet></router-outlet>
+</div>

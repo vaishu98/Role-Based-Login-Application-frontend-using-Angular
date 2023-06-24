@@ -1,0 +1,12 @@
+<div class="login-wrapper">
+    <div class="login-box">
+        <h1>Login to continue</h1>
+        <form #loginForm="ngForm" (submit)="Login(loginForm.value)">
+            <input type="text" placeholder="Username" name="username" ngModel>
+            <input type="password" placeholder="Password" name="password" ngModel>
+            <div class="login-button-wrapper">
+                <button type="submit" mat-raised-button>Login</button>
+            </div>
+        </form>
+    </div>
+</div>
