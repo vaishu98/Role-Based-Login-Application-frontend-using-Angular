@@ -34,7 +34,7 @@ Installation
 
 ## To run the application locally, please follow these steps:
 
-- Clone the repository: git clone <repository-url>
+- Clone the repository: git clone https://github.com/vaishu98/Role-Based-Login-Application-frontend-using-Angular.git
 - Navigate to the project directory: cd RBACLoginFrontend
 - Install dependencies: npm install
 - Configure the database: Set up a database and update the database configuration in the application.
